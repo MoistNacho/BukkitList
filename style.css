@@ -1,0 +1,97 @@
+body {
+  height: 100vh;
+  display: flex;
+  background-color: #c8cddb;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto Slab", serif;
+}
+
+section {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: white;
+  width: 450px;
+  height: 800px;
+}
+
+section .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  background: linear-gradient(to bottom right, #ddb7d1, #80b5ee);
+  border-radius: 10px 10px 0 0;
+  height: 12%;
+}
+
+section .list {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  width: 100%;
+  height: 70%;
+  background-color: #f0eef6;
+}
+
+section .listItem {
+  padding: 10px 0;
+
+  font-size: 18px;
+  border-left: solid 3px lightcoral;
+  border-bottom: solid 1px lightgrey;
+  display: flex;
+  justify-content: space-between;
+}
+
+section .listItem .bukkit {
+  font-family: "Jua", sans-serif;
+  margin-left: 10px;
+}
+
+section .listItem .delBtn {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  background-color: darkgray;
+  color: white;
+  margin-right: 10px;
+  transition: background-color 300ms linear;
+}
+
+section .listItem .delBtn:hover {
+  background-color: tomato;
+}
+
+section input {
+  font-size: 18px;
+  height: 6%;
+  outline: none;
+  border: none;
+}
+section .bottom {
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #ddb7d1, #80b5ee);
+  border-radius: 0 0 10px 10px;
+}
+
+section .addBtn {
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  background-color: #0d0422;
+  color: white;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
