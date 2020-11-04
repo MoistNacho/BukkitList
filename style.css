@@ -38,9 +38,12 @@ section .list {
   background-color: #f0eef6;
 }
 
+section .list::-webkit-scrollbar {
+  display: none;
+}
+
 section .listItem {
   padding: 10px 0;
-
   font-size: 18px;
   border-left: solid 3px lightcoral;
   border-bottom: solid 1px lightgrey;
@@ -50,6 +53,7 @@ section .listItem {
 
 section .listItem .bukkit {
   font-family: "Jua", sans-serif;
+  color: rgb(71, 71, 71);
   margin-left: 10px;
 }
 
