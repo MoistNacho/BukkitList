@@ -4,7 +4,7 @@
 Demo : https://moistnacho.github.io/BukkitList/
 
 ## Tools
-> + Vanilla JS
++ Vanilla JS
 
 ## Preview
 ![Bukkit List img](https://user-images.githubusercontent.com/59498305/98068799-7024e980-1ea0-11eb-9318-ecbafe22e313.png)
