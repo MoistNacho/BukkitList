@@ -38,6 +38,8 @@ addBtn.addEventListener('click', ()=>{
     addList();
 });
 
+
+// 아이템 리스트 삭제
 list.addEventListener('click', (event)=>{
     const id = event.target.dataset.id;
     if(event.target.className === 'delBtn'){
