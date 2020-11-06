@@ -5,7 +5,6 @@ const list = document.querySelector('.list');
 const input = document.querySelector('input');
 
 let counter = 0;
-let delBtn = [];
 
 // 아이템 리스트 추가
 function addList(){
@@ -13,9 +12,9 @@ function addList(){
         return;
     }
     
-    let listItems= `<div class="listItem">
+    let listItems= `<div class="listItem" data-id="${counter}">
                             <span class="bukkit">${counter+1}. ${input.value}</span>
-                            <button class="delBtn">X</button>
+                            <button class="delBtn" data-id="${counter}">X</button>
                         </div>`;
 
 
@@ -23,16 +22,7 @@ function addList(){
     input.value = "";
 
     
-    // 아이템 리스트 제거
-    delBtn = document.querySelectorAll('.delBtn');
-    for(let i=0; i<=counter; i++){   
-        delBtn[i].addEventListener('click', ()=>{
-            let div = delBtn[i].parentNode;
-            list.removeChild(div);
 
-            --counter;
-        });
-    }
     
     counter++;
 }
@@ -48,6 +38,19 @@ addBtn.addEventListener('click', ()=>{
     addList();
 });
 
+list.addEventListener('click', (event)=>{
+    const id = event.target.dataset.id;
+    if(event.target.className === 'delBtn'){
+        if(id){
+            const deleted = document.querySelector(`.listItem[data-id="${id}"]`)
+            deleted.remove();
+    
+            --counter;
+        }
+    }
+    
+    
+});
 
 
 
