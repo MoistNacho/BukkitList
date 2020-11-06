@@ -44,7 +44,6 @@ section .list::-webkit-scrollbar {
 
 section .listItem {
   padding: 10px 0;
-
   font-size: 18px;
   border-left: solid 3px lightcoral;
   border-bottom: solid 1px lightgrey;
